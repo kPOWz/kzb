@@ -1,0 +1,279 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.1.62
+3 info using node@v0.8.11
+4 verbose read json /Users/mac/Sites/less_express_trial/package.json
+5 warn package.json application-name@0.0.1 No README.md file found!
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/mac/Sites/less_express_trial',
+7 verbose install   [ 'express', 'jade', 'less-middleware' ] ]
+8 verbose from cache /Users/mac/Sites/less_express_trial/package.json
+9 info preinstall application-name@0.0.1
+10 verbose read json /Users/mac/Sites/less_express_trial/node_modules/express/package.json
+11 verbose read json /Users/mac/Sites/less_express_trial/node_modules/jade/package.json
+12 verbose read json /Users/mac/Sites/less_express_trial/node_modules/less/package.json
+13 verbose from cache /Users/mac/Sites/less_express_trial/package.json
+14 verbose readDependencies using package.json deps
+15 verbose read json /Users/mac/Sites/less_express_trial/node_modules/.bin/package.json
+16 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/express/package.json
+17 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/jade/package.json
+18 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less/package.json
+19 verbose cache add [ 'less-middleware@*', null ]
+20 silly cache add name=undefined spec="less-middleware@*" args=["less-middleware@*",null]
+21 verbose parsed url { pathname: 'less-middleware@*',
+21 verbose parsed url   path: 'less-middleware@*',
+21 verbose parsed url   href: 'less-middleware@*' }
+22 silly cache add name="less-middleware" spec="*" args=["less-middleware","*"]
+23 verbose parsed url { pathname: '*', path: '*', href: '*' }
+24 verbose addNamed [ 'less-middleware', '*' ]
+25 verbose addNamed [ null, '' ]
+26 verbose already installed skipping express@3.0.0rc5 /Users/mac/Sites/less_express_trial
+27 silly lockFile 6c2318f2-less-middleware less-middleware@*
+28 verbose lock less-middleware@* /Users/mac/.npm/6c2318f2-less-middleware.lock
+29 silly addNameRange { name: 'less-middleware', range: '', hasData: false }
+30 verbose already installed skipping jade@* /Users/mac/Sites/less_express_trial
+31 verbose url raw less-middleware
+32 verbose url resolving [ 'https://registry.npmjs.org/', './less-middleware' ]
+33 verbose url resolved https://registry.npmjs.org/less-middleware
+34 info trying registry request attempt 1 at 18:12:24
+35 verbose etag "6W34N9FJ74H8OJ638KA9ELK4K"
+36 http GET https://registry.npmjs.org/less-middleware
+37 http 304 https://registry.npmjs.org/less-middleware
+38 silly registry.get cb [ 304,
+38 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+38 silly registry.get     etag: '"6W34N9FJ74H8OJ638KA9ELK4K"',
+38 silly registry.get     date: 'Thu, 18 Oct 2012 23:12:25 GMT',
+38 silly registry.get     'content-length': '0' } ]
+39 verbose etag less-middleware from cache
+40 silly addNameRange number 2 { name: 'less-middleware', range: '', hasData: true }
+41 silly addNameRange versions [ 'less-middleware',
+41 silly addNameRange   [ '0.0.0',
+41 silly addNameRange     '0.1.0',
+41 silly addNameRange     '0.1.1',
+41 silly addNameRange     '0.1.2',
+41 silly addNameRange     '0.1.3',
+41 silly addNameRange     '0.1.4',
+41 silly addNameRange     '0.1.5',
+41 silly addNameRange     '0.1.6',
+41 silly addNameRange     '0.1.7',
+41 silly addNameRange     '0.1.8' ] ]
+42 verbose addNamed [ 'less-middleware', '0.1.8' ]
+43 verbose addNamed [ '0.1.8', '0.1.8' ]
+44 silly lockFile 4132ea77-less-middleware-0-1-8 less-middleware@0.1.8
+45 verbose lock less-middleware@0.1.8 /Users/mac/.npm/4132ea77-less-middleware-0-1-8.lock
+46 verbose read json /Users/mac/.npm/less-middleware/0.1.8/package/package.json
+47 silly lockFile 4132ea77-less-middleware-0-1-8 less-middleware@0.1.8
+48 silly lockFile 6c2318f2-less-middleware less-middleware@*
+49 silly resolved [ { author:
+49 silly resolved      { name: 'Randy Merrill',
+49 silly resolved        email: 'Zoramite+github@gmail.com',
+49 silly resolved        url: 'http://forthedeveloper.com' },
+49 silly resolved     name: 'less-middleware',
+49 silly resolved     description: 'LESS.js middleware for connect.',
+49 silly resolved     version: '0.1.8',
+49 silly resolved     repository:
+49 silly resolved      { type: 'git',
+49 silly resolved        url: 'git://github.com/emberfeather/less.js-middleware.git' },
+49 silly resolved     main: 'lib/middleware.js',
+49 silly resolved     dependencies: { less: '>= 1.3.0', mkdirp: '>= 0.3.1' },
+49 silly resolved     devDependencies: {},
+49 silly resolved     optionalDependencies: {},
+49 silly resolved     engines: { node: '*' },
+49 silly resolved     readme: '## Installation\n\n    sudo npm install less-middleware\n\n## Options\n\n<table>\n    <thead>\n        <tr>\n            <th>Option</th>\n            <th>Description</th>\n            <th>Default</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <th><code>force</code></th>\n            <td>Always re-compile less files on each request.</td>\n            <td><code>false</code></td>\n        </tr>\n        <tr>\n            <th><code>once</code></th>\n            <td>Only check for need to recompile once after each server restart. Useful for reducing disk i/o on production.</td>\n            <td><code>false</code></td>\n        </tr>\n        <tr>\n            <th><code>debug</code></th>\n            <td>Output any debugging messages to the console.</td>\n            <td><code>false</code></td>\n        </tr>\n        <tr>\n            <th><code>src</code></th>\n            <td>Source directory containing the <code>.less</code> files. <strong>Required.</strong></td>\n            <td></td>\n        </tr>\n        <tr>\n            <th><code>dest</code></th>\n            <td>Desitnation directory to output the compiled <code>.css</code> files.</td>\n            <td><code>&lt;src&gt;</code></td>\n        </tr>\n        <tr>\n            <th><code>prefix</code></th>\n            <td>Path which should be stripped from the public <code>pathname</code>.</td>\n            <td></td>\n        </tr>\n        <tr>\n            <th><code>compress</code></th>\n            <td>Compress the output being written to the <code>*.css</code> files. When set to <code>\'auto\'</code> compression will only happen when the css file ends with <code>.min.css</code> or <code>-min.css</code>.</td>\n            <td><code>auto</code></td>\n        </tr>\n        <tr>\n            <th><code>optimization</code></th>\n            <td>Desired level of LESS optimization. Optionally <code>0</code>, <code>1</code>, or <code>2</code></td>\n            <td><code>0</code></td>\n        </tr>\n    </tbody>\n</table>\n\n## Examples\n\n### Connect\n\n    var lessMiddleware = require(\'less-middleware\');\n\n    var server = connect.createServer(\n        lessMiddleware({\n            src: __dirname + \'/public\',\n            compress: true\n        }),\n        connect.staticProvider(__dirname + \'/public\')\n    );\n\n### Express\n\n    var lessMiddleware = require(\'less-middleware\');\n\n    var app = express.createServer();\n\n    app.configure(function () {\n        // Other configuration here...\n\n        app.use(lessMiddleware({\n            src: __dirname + \'/public\',\n            compress: true\n        }));\n\n        app.use(express.static(__dirname + \'/public\'));\n    });\n\n### Express - Different `src` and `dest`\n\nWhen using a different `src` and `dest` you can use the `prefix` option to make the directory structure cleaner.\n\nRequests for static assets (like stylesheets) made to the express server use a `pathname` to look up the file. So if the request is for `http://localhost/stylesheets/styles.css` the `pathname` will be `/stylesheets/styles.css`.\n\nThe less middleware uses that path to determine where to look for less files. In the original example it looks for the less file at `/public/stylesheets/styles.less` and compiles it to `/public/stylesheets/styles.css`.\n\nIf you are using a different `src` and `dest` options it causes for more complex directories structures unless you use the `prefix` option. For example, without the `prefix`, and with a `src` of `/src/less` and a `dest` of `/public` it would look for the less file at `/src/less/stylesheets/styles.less` and compile it to `/public/stylesheets/styles.css`. To make it cleaner you can use the `prefix` option:\n\n    var lessMiddleware = require(\'less-middleware\');\n\n    var app = express.createServer();\n\n    app.configure(function () {\n        // Other configuration here...\n\n        app.use(lessMiddleware({\n            dest: __dirname + \'/public/stylesheets\',\n            src: __dirname + \'/src/less\',\n            prefix: \'/stylesheets\',\n            compress: true\n        }));\n\n        app.use(express.static(__dirname + \'/public\'));\n    });\n\nUsing the `prefix` it changes the `pathname` from `/stylesheets/styles.css` to `/styles.css`. With that prefix removed from the `pathname` it makes things cleaner. With the `prefix` removed it would look for the less file at `/src/less/styles.less` and compile it to `/public/stylesheets/styles.css`.\n',
+49 silly resolved     _id: 'less-middleware@0.1.8',
+49 silly resolved     _from: 'less-middleware@*' } ]
+50 info install less-middleware@0.1.8 into /Users/mac/Sites/less_express_trial
+51 info installOne less-middleware@0.1.8
+52 verbose from cache /Users/mac/.npm/less-middleware/0.1.8/package/package.json
+53 info /Users/mac/Sites/less_express_trial/node_modules/less-middleware unbuild
+54 verbose read json /Users/mac/Sites/less_express_trial/node_modules/less-middleware/package.json
+55 verbose tar unpack /Users/mac/.npm/less-middleware/0.1.8/package.tgz
+56 silly lockFile f558b973-ial-node-modules-less-middleware /Users/mac/Sites/less_express_trial/node_modules/less-middleware
+57 verbose lock /Users/mac/Sites/less_express_trial/node_modules/less-middleware /Users/mac/.npm/f558b973-ial-node-modules-less-middleware.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm extractEntry lib/middleware.js
+62 silly gunzTarPerm extractEntry readme.md
+63 silly gunzTarPerm extractEntry test/parse-test.js
+64 verbose read json /Users/mac/Sites/less_express_trial/node_modules/less-middleware/package.json
+65 silly lockFile f558b973-ial-node-modules-less-middleware /Users/mac/Sites/less_express_trial/node_modules/less-middleware
+66 info preinstall less-middleware@0.1.8
+67 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/package.json
+68 verbose readDependencies using package.json deps
+69 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/package.json
+70 verbose readDependencies using package.json deps
+71 verbose cache add [ 'mkdirp@>= 0.3.1', null ]
+72 silly cache add name=undefined spec="mkdirp@>= 0.3.1" args=["mkdirp@>= 0.3.1",null]
+73 verbose parsed url { pathname: 'mkdirp@%3E=%200.3.1',
+73 verbose parsed url   path: 'mkdirp@%3E=%200.3.1',
+73 verbose parsed url   href: 'mkdirp@%3E=%200.3.1' }
+74 silly cache add name="mkdirp" spec=">= 0.3.1" args=["mkdirp",">= 0.3.1"]
+75 verbose parsed url { pathname: '%3E=%200.3.1',
+75 verbose parsed url   path: '%3E=%200.3.1',
+75 verbose parsed url   href: '%3E=%200.3.1' }
+76 verbose addNamed [ 'mkdirp', '>= 0.3.1' ]
+77 verbose addNamed [ null, '>=0.3.1' ]
+78 silly lockFile fabaef91-mkdirp-0-3-1 mkdirp@>= 0.3.1
+79 verbose lock mkdirp@>= 0.3.1 /Users/mac/.npm/fabaef91-mkdirp-0-3-1.lock
+80 silly addNameRange { name: 'mkdirp', range: '>=0.3.1', hasData: false }
+81 verbose url raw mkdirp
+82 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+83 verbose url resolved https://registry.npmjs.org/mkdirp
+84 info trying registry request attempt 1 at 18:12:25
+85 verbose etag "4VY93YHIIJ11G0NNP12CLD9IC"
+86 http GET https://registry.npmjs.org/mkdirp
+87 http 304 https://registry.npmjs.org/mkdirp
+88 silly registry.get cb [ 304,
+88 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+88 silly registry.get     etag: '"4VY93YHIIJ11G0NNP12CLD9IC"',
+88 silly registry.get     date: 'Thu, 18 Oct 2012 23:12:25 GMT',
+88 silly registry.get     'content-length': '0' } ]
+89 verbose etag mkdirp from cache
+90 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.1', hasData: true }
+91 silly addNameRange versions [ 'mkdirp',
+91 silly addNameRange   [ '0.0.1',
+91 silly addNameRange     '0.0.2',
+91 silly addNameRange     '0.0.3',
+91 silly addNameRange     '0.0.4',
+91 silly addNameRange     '0.0.5',
+91 silly addNameRange     '0.0.6',
+91 silly addNameRange     '0.0.7',
+91 silly addNameRange     '0.1.0',
+91 silly addNameRange     '0.2.0',
+91 silly addNameRange     '0.2.1',
+91 silly addNameRange     '0.2.2',
+91 silly addNameRange     '0.3.0',
+91 silly addNameRange     '0.3.1',
+91 silly addNameRange     '0.3.2',
+91 silly addNameRange     '0.3.3',
+91 silly addNameRange     '0.3.4' ] ]
+92 verbose addNamed [ 'mkdirp', '0.3.4' ]
+93 verbose addNamed [ '0.3.4', '0.3.4' ]
+94 silly lockFile 86f43333-mkdirp-0-3-4 mkdirp@0.3.4
+95 verbose lock mkdirp@0.3.4 /Users/mac/.npm/86f43333-mkdirp-0-3-4.lock
+96 verbose read json /Users/mac/.npm/mkdirp/0.3.4/package/package.json
+97 silly lockFile 86f43333-mkdirp-0-3-4 mkdirp@0.3.4
+98 silly lockFile fabaef91-mkdirp-0-3-1 mkdirp@>= 0.3.1
+99 silly resolved [ { name: 'mkdirp',
+99 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+99 silly resolved     version: '0.3.4',
+99 silly resolved     author:
+99 silly resolved      { name: 'James Halliday',
+99 silly resolved        email: 'mail@substack.net',
+99 silly resolved        url: 'http://substack.net' },
+99 silly resolved     main: './index',
+99 silly resolved     keywords: [ 'mkdir', 'directory' ],
+99 silly resolved     repository:
+99 silly resolved      { type: 'git',
+99 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+99 silly resolved     scripts: { test: 'tap test/*.js' },
+99 silly resolved     devDependencies: { tap: '~0.2.4' },
+99 silly resolved     license: 'MIT/X11',
+99 silly resolved     engines: { node: '*' },
+99 silly resolved     readme: 'mkdirp\n======\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\nexample\n=======\n\npow.js\n------\n    var mkdirp = require(\'mkdirp\');\n    \n    mkdirp(\'/tmp/foo/bar/baz\', function (err) {\n        if (err) console.error(err)\n        else console.log(\'pow!\')\n    });\n\nOutput\n    pow!\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\nmethods\n=======\n\nvar mkdirp = require(\'mkdirp\');\n\nmkdirp(dir, mode, cb)\n---------------------\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\nmkdirp.sync(dir, mode)\n----------------------\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\ninstall\n=======\n\nWith [npm](http://npmjs.org) do:\n\n    npm install mkdirp\n\nlicense\n=======\n\nMIT/X11\n',
+99 silly resolved     _id: 'mkdirp@0.3.4',
+99 silly resolved     _from: 'mkdirp@>= 0.3.1' } ]
+100 info install mkdirp@0.3.4 into /Users/mac/Sites/less_express_trial/node_modules/less-middleware
+101 info installOne mkdirp@0.3.4
+102 verbose from cache /Users/mac/.npm/mkdirp/0.3.4/package/package.json
+103 info /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp unbuild
+104 verbose read json /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp/package.json
+105 verbose tar unpack /Users/mac/.npm/mkdirp/0.3.4/package.tgz
+106 silly lockFile f076eac3-s-middleware-node-modules-mkdirp /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp
+107 verbose lock /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp /Users/mac/.npm/f076eac3-s-middleware-node-modules-mkdirp.lock
+108 silly gunzTarPerm modes [ '755', '644' ]
+109 silly gunzTarPerm extractEntry package.json
+110 silly gunzTarPerm extractEntry .npmignore
+111 silly gunzTarPerm extractEntry LICENSE
+112 silly gunzTarPerm extractEntry index.js
+113 silly gunzTarPerm extractEntry .travis.yml
+114 silly gunzTarPerm extractEntry examples/pow.js
+115 silly gunzTarPerm extractEntry README.markdown
+116 silly gunzTarPerm extractEntry test/chmod.js
+117 silly gunzTarPerm extractEntry test/perm.js
+118 silly gunzTarPerm extractEntry test/perm_sync.js
+119 silly gunzTarPerm extractEntry test/race.js
+120 silly gunzTarPerm extractEntry test/mkdirp.js
+121 silly gunzTarPerm extractEntry test/return.js
+122 silly gunzTarPerm extractEntry test/return_sync.js
+123 silly gunzTarPerm extractEntry test/root.js
+124 silly gunzTarPerm extractEntry test/sync.js
+125 silly gunzTarPerm extractEntry test/umask.js
+126 silly gunzTarPerm extractEntry test/clobber.js
+127 silly gunzTarPerm extractEntry test/umask_sync.js
+128 silly gunzTarPerm extractEntry test/rel.js
+129 verbose read json /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp/package.json
+130 silly lockFile f076eac3-s-middleware-node-modules-mkdirp /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp
+131 info preinstall mkdirp@0.3.4
+132 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp/package.json
+133 verbose readDependencies using package.json deps
+134 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp/package.json
+135 verbose readDependencies using package.json deps
+136 silly resolved []
+137 verbose about to build /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp
+138 info build /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp
+139 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules/mkdirp/package.json
+140 verbose linkStuff [ false,
+140 verbose linkStuff   false,
+140 verbose linkStuff   false,
+140 verbose linkStuff   '/Users/mac/Sites/less_express_trial/node_modules/less-middleware/node_modules' ]
+141 info linkStuff mkdirp@0.3.4
+142 verbose linkBins mkdirp@0.3.4
+143 verbose linkMans mkdirp@0.3.4
+144 verbose rebuildBundles mkdirp@0.3.4
+145 info install mkdirp@0.3.4
+146 info postinstall mkdirp@0.3.4
+147 verbose about to build /Users/mac/Sites/less_express_trial/node_modules/less-middleware
+148 info build /Users/mac/Sites/less_express_trial/node_modules/less-middleware
+149 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less-middleware/package.json
+150 verbose linkStuff [ false,
+150 verbose linkStuff   false,
+150 verbose linkStuff   false,
+150 verbose linkStuff   '/Users/mac/Sites/less_express_trial/node_modules' ]
+151 info linkStuff less-middleware@0.1.8
+152 verbose linkBins less-middleware@0.1.8
+153 verbose linkMans less-middleware@0.1.8
+154 verbose rebuildBundles less-middleware@0.1.8
+155 verbose rebuildBundles [ 'mkdirp' ]
+156 info install less-middleware@0.1.8
+157 info postinstall less-middleware@0.1.8
+158 info build /Users/mac/Sites/less_express_trial
+159 verbose from cache /Users/mac/Sites/less_express_trial/package.json
+160 verbose linkStuff [ false, false, false, '/Users/mac/Sites' ]
+161 info linkStuff application-name@0.0.1
+162 verbose linkBins application-name@0.0.1
+163 verbose linkMans application-name@0.0.1
+164 verbose rebuildBundles application-name@0.0.1
+165 verbose rebuildBundles [ '.bin', 'express', 'jade', 'less', 'less-middleware' ]
+166 verbose rebuild bundle /Users/mac/Sites/less_express_trial/node_modules/less
+167 info build /Users/mac/Sites/less_express_trial/node_modules/less
+168 verbose from cache /Users/mac/Sites/less_express_trial/node_modules/less/package.json
+169 info preinstall less@1.3.1
+170 verbose linkStuff [ false,
+170 verbose linkStuff   false,
+170 verbose linkStuff   false,
+170 verbose linkStuff   '/Users/mac/Sites/less_express_trial/node_modules' ]
+171 info linkStuff less@1.3.1
+172 verbose linkBins less@1.3.1
+173 verbose link bins [ { lessc: './bin/lessc' },
+173 verbose link bins   '/Users/mac/Sites/less_express_trial/node_modules/.bin',
+173 verbose link bins   false ]
+174 verbose linkMans less@1.3.1
+175 verbose rebuildBundles less@1.3.1
+176 error Error: EPERM, chmod '/Users/mac/Sites/less_express_trial/node_modules/.bin/lessc'
+176 error  { [Error: EPERM, chmod '/Users/mac/Sites/less_express_trial/node_modules/.bin/lessc']
+176 error   errno: 50,
+176 error   code: 'EPERM',
+176 error   path: '/Users/mac/Sites/less_express_trial/node_modules/.bin/lessc' }
+177 error Please try running this command again as root/Administrator.
+178 error System Darwin 9.8.0
+179 error command "node" "/usr/local/bin/npm" "install"
+180 error cwd /Users/mac/Sites/less_express_trial
+181 error node -v v0.8.11
+182 error npm -v 1.1.62
+183 error path /Users/mac/Sites/less_express_trial/node_modules/.bin/lessc
+184 error code EPERM
+185 error errno 50
+186 error stack Error: EPERM, chmod '/Users/mac/Sites/less_express_trial/node_modules/.bin/lessc'
+187 verbose exit [ 50, true ]

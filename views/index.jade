@@ -1,0 +1,194 @@
+!!! 5
+//if lt IE 7
+  html(class="no-js lt-ie9 lt-ie8 lt-ie7", lang="en")
+//if (IE 7) & (!IEMobile)
+  html(class="no-js lt-ie9 lt-ie8", lang="en")
+//if (IE 8) & (!IEMobile)
+  html(class="no-js lt-ie9", lang="en")
+// [if gt IE 8]><!
+html(class="no-js", lang="en")
+  // <![endif]
+
+  head
+    meta(charset='utf-8')
+    title Katherine Zeman Bach, Software Developer Resume
+
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(name='author', content='Katherine Zeman Bach')
+    //
+       override display defaults showing browser this is a mobile-capabile document 
+    meta(name='HandheldFriendly', content='True')
+    meta(name='MobileOptimized', content='320')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='robots', content='all')
+    //
+       TODO Google web master tools account 
+    meta(name='verify-v1', content='')
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="/javascripts/jquery-1.7.2.min.js"><\\/script>')
+    //
+        IE provisioning - Support CSS3 selectors, could also do this with Modernizr feature detection for css selectors
+    //if (lt IE 9) & (!IEMobile)
+      script(src='js/selectivizr-min.js')
+      
+    script(type='text/javascript', src='/javascripts/modernizr.custom.15176.js')
+    meta(http-equiv='cleartype', content='on')
+  body.clearfix(itemscope='itemscope', itemtype='http://schema.org/Person', role='document')
+    header.clearfix(role='banner')
+      hgroup
+        h1.cozy(itemprop='name') Katherine Zeman Bach
+        h2(itemprop='description')
+          light Software Developer & All-around Technologist
+        h6.cozy
+          | Email me!
+          a.email(href='mailto:karrie.zeman@gmail.com', itemprop='email', role='link') karrie.zeman@gmail.com
+          span(role='note')   (Katherine? Karrie?, yes, quite confusing.)
+        h6
+          | Telephoning me works too :
+          span(itemprop='telephone')
+            a(href='tel:+13192408908', role='link') 319-240-8908
+          span(role='note')  (notice the prize NE Iowa area code)
+      //
+         TODO: cover letter modal 
+
+    .content.clearfix
+      //
+         show/hide details using pure CSS3, no javascript
+      section#career(role='region')
+        #content
+          h1(role='heading') Career History 
+          a.expand(href='#content')  >>> details >>>
+          a.collapse(href='#career')  <<< hide details <<<
+          hgroup
+            h2.cozy(itemprop='affiliation', itemscope='itemscope', itemtype='http://schema.org/Organization', itemid='https://www.dwolla.com/')
+              span(itemprop='name') Dwolla Inc.
+            h3
+              span(itemprop='jobTitle') Software Engineer
+              | : 
+              light December 2010 - September 2012
+          ul.details(role='list') 
+            li RESTful API development in .NET mainly based on WCF services consumed by several hundred applications
+            li Many tasks working with the OAuth (1 & 2) both serving & consuming APIs that use this modern authorization standard
+            li Frequent work with many of the most powerful & popular APIs available today including Facebook, Twitter, LinkedIn, Twilio, Pusher, 4SQ
+            li Oversaw & developed systems designed to interface with core, backend banking network in the United States greatly building on my existing knowledge of this industry
+            li Developed and evolved systems for detecting and combating information security risks & monetary fraud
+            li Active involvement on agile-pursuant-team constantly working towards continuous, predictable software releases & improving automated software testing
+          hgroup
+            h2.cozy(itemprop='affiliation', itemscope='itemscope', itemtype='http://schema.org/Organization', itemid='http://www.principal.com/index.shtm')
+              span(itemprop='name') Principal Financial Group
+            h3
+              span(itemprop='jobTitle') IT System Analyst
+              | : 
+              light April 2008 - December 2010
+          ul.details(role='list')
+            li
+              | Java Enterprise Edition internal application development & design including SE, EJB/MDB, Struts, JSP, JAX-RPC/RS/WS
+            li
+              | Reviewed code, advised and assisted developers from all PFG business areas on integrating their applications with the corporate content management repositories
+            li
+              | Supported high availability production systems expected to be live 24x7; counted on for 24x7 on call production support
+            li
+              | Lead major enterprise software upgrades including IBM db2, IBM Net Search  Extender, Content Manager Enterprise Edition, and IBM web applications
+            li
+              | Performed as WebSphere Application Server subject matter expert on team taking the lead on these cross team projects
+          hgroup
+            h2.cozy(itemprop='affiliation', itemscope='itemscope', itemtype='http://schema.org/Organization', itemid='http://vetmed.iastate.edu/')
+              span(itemprop='name') ISU - College of Veterinary Medicine
+            h3
+              span(itemprop='jobTitle') Technology Helpdesk
+              | : 
+              light September 2007 - December 2007
+          ul.details(role='list')
+            li
+              | Contribution to the establishment of a college-wide IT inventory system to boost overall IT infrastructure efficiency
+            li
+              | Handle troubleshooting for hardware, software and networking problems of the CVM's community
+            li
+              | Assist in the transfer of the college’s web pages from a Dreamweaver setup in ASP to a content management system accessible by faculty at large
+          hgroup
+            h2.cozy(itemprop='affiliation', itemscope='itemscope', itemtype='http://schema.org/Organization', itemid='https://www.wellsfargo.com/')
+              span(itemprop='name') Wells Fargo
+            h3
+              span(itemprop='jobTitle') Quality Assurance Testing
+              | : 
+              light May 2007 - August 2007 
+          ul.details(role='list')
+            li Maintained project database and repository for Quality Assurance team
+            li
+              | Determined and presided over overall QA implementation status for all monitored projects
+            li
+              | QA point of contact for all Project Mangers of projects involving Operations and Corporate Technology applications
+      section(role='landmark')
+        h1(role='heading') Skills
+        h2 Software Languages
+        table
+          thead
+            tr
+              th Skill
+              th Level
+            tr
+              td C#
+              td Intermediate - Expert
+            tr
+              td Java
+              td Intermediate - Expert
+            tr
+              td Relational Database (MySQL, SQL Server)
+              td Intermediate - Expert
+            tr
+              td Client Side Javascript (inclding JQuery)
+              td Intermediate
+            tr
+              td Document Database (MongoDB)
+              td Intermediate
+            tr
+              td PHP
+              td Intermediate
+            tr
+              td HTML5
+              td Beginner - Intermediate
+            tr
+              td CSS3
+              td Beginner - Intermediate
+            tr
+              td Server Side Javascript (Node.js)
+              td Beginner
+        h2 Software Lifecycle & Infrastructure Tools
+        ul(role='list')
+          li Hudson & Jenkins CI tools
+          li Apache 
+          li Unix shells & scripting
+          li Sql Server Management Studio
+          li Source Control - Git, SVN, & Clearcase
+          li Chrome & Firebug Dev Tools
+          li Mongo VUE
+          li Visual Studio 2010+ (including MVC framework)
+          li Eclipse (for PHP & Java)
+          li TDD - w/ MSTest mocking framework
+          li Various Kanban Systems (including Jira, Trello, etc.)
+      section(role='landmark')
+        h1(role='heading') Education
+        h2 Continuing Education
+        ul(role='list')
+          li Six Iowa, Nebraska code camps in last two years
+          li Frequent attendee Central Iowa .NET User Group
+          li Frequent attendee Central Iowa Java Users Group
+          li Summer 2010 - Central Iowa Software Symposium 
+          li Summer 2010 - PFG-Internal 20+ hour Java Server Faces course
+          li Summer 2010 - PFG-Internal 20+ hour Java Server Pages course
+        h2 Bachelor's Degree
+        ul(role='list')
+          li(itemprop='alumniOf', itemscope='itemscope', itemtype='http://schema.org/CollegeOrUniversity', itemid='http://www.iastate.edu/')
+            span(itemprop='name') Iowa State University
+            | Ames, IA - Bachelor of Science
+          li Major: Management Information Systems,   Minor: Marketing
+          li Graduation Date: Dec. 2007
+  footer
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300', rel='stylesheet', type='text/css')
+    //link(rel='icon', type="image/x-icon", href='/images/favicon.ico')
+    
