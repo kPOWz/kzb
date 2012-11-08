@@ -43,7 +43,9 @@ content: " (" attr(title) ")"; }
 // 3. COLOUR 				==============================
 
 a, a:visited { 
-text-decoration : underline; }
+text-decoration : underline; 
+	&.expand, &.collapse{display: none;}}
+
 
 a[href]:after { 
 content : " (" attr(href) ")"; }
@@ -65,6 +67,11 @@ tr {
 page-break-inside : avoid; }
 
 // 5. ELEMENTS 				==============================
+
+section .details,
+div .details{
+display : block !important;}
+
 // 6. LAYOUT 				==============================
 // 7. VENDOR-SPECIFIC 		==============================
 // 8. MODERNIZR 			==============================

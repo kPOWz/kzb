@@ -1940,6 +1940,12 @@ table tbody tr:hover th {
   a:visited {
     text-decoration: underline;
   }
+  a.expand,
+  a:visited.expand,
+  a.collapse,
+  a:visited.collapse {
+    display: none;
+  }
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -1956,6 +1962,10 @@ table tbody tr:hover th {
   }
   tr {
     page-break-inside: avoid;
+  }
+  section .details,
+  div .details {
+    display: block !important;
   }
 }
 @media only screen and (min-width: 480px) {
