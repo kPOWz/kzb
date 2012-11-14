@@ -1944,7 +1944,7 @@ table tbody tr:hover th {
   a:visited.expand,
   a.collapse,
   a:visited.collapse {
-    display: none;
+    display: none !important;
   }
   a[href]:after {
     content: " (" attr(href) ")";
