@@ -150,9 +150,9 @@ h1 heavy,
 h2 heavy {
   font-weight: bold;
 }
-h1 light,
-h2 light,
-h3 light {
+h1 .light,
+h2 .light,
+h3 .light {
   color: #808080;
 }
 section h1 {
