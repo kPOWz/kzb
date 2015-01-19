@@ -152,7 +152,8 @@ h2 heavy {
 }
 h1 .light,
 h2 .light,
-h3 .light {
+h3 .light,
+li .light {
   color: #808080;
 }
 section h1 {
