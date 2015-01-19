@@ -778,12 +778,11 @@ a [class*=" icon-"] {
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: top;
-  font-size: 1.3333333333333333em;
+  font-size: 1.33333333em;
 }
 .btn [class^="icon-"],
 .btn [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
-
   line-height: .9em;
 }
 li [class^="icon-"],
@@ -795,7 +794,6 @@ li [class*=" icon-"] {
 li .icon-large[class^="icon-"],
 li .icon-large[class*=" icon-"] {
   /* 1.5 increased font size for icon-large * 1.25 width */
-
   width: 1.875em;
 }
 li[class^="icon-"],
@@ -810,7 +808,7 @@ li[class*=" icon-"]:before {
 }
 li[class^="icon-"].icon-large:before,
 li[class*=" icon-"].icon-large:before {
-  text-indent: -1.3333333333333333em;
+  text-indent: -1.33333333em;
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
@@ -1571,7 +1569,6 @@ input:-moz-placeholder {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   padding: 6px 11px 6px;
   margin-bottom: 0;
@@ -1915,7 +1912,7 @@ table tbody tr:hover th {
     filter: none !important;
     -ms-filter: none !important;
   }
-  @page  {
+  @page {
     margin: 0.5cm;
   }
   h2,
