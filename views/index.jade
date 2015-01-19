@@ -62,11 +62,13 @@ html(class="no-js", lang="en")
     .content.clearfix
       //
          show/hide details using pure CSS3, no javascript
-      section#career(role='region')
-        #content
+      section#summary(role='region')
+        #detail
           h1(role='heading') Career History 
-          a.expand(href='#content')  >>> details >>>
-          a.collapse(href='#career')  <<< hide details <<<
+          a.expand(href='#detail')  detail 
+            i.fa.fa-toggle-down
+          a.collapse(href='#summary')  hide detail 
+            i.fa.fa-toggle-down.fa-rotate-180
           hgroup
             h2.cozy(itemprop='affiliation', itemscope='itemscope', itemtype='http://schema.org/Organization', itemid='https://www.fmh.com/')
               span(itemprop='name') Farmers Mutual Hail 
@@ -231,7 +233,7 @@ html(class="no-js", lang="en")
                 i(title='intermediate').fa.fa-star
                 i(title='intermediate-expert').fa.fa-star-o
                 i(title='expert').fa.fa-star-o
-        h2 Software Lifecycle & Infrastructure Tools
+        h2 Software Workflow, Lifecycle & Infrastructure Tools
         ul(role='list')
           li(role='listitem') Hudson & Jenkins CI tools
           li(role='listitem') NHibernate 
