@@ -33,6 +33,7 @@
 @basecolor 		: rgb(45,53,62);	  
 @compcolor 		: spin(@basecolor, 180); 
 @bordercolor    : lighten(@basecolor, 60%);
+@surprisecolor 	: rgb(255, 106, 77);
 
 // greyscale
 
@@ -46,10 +47,10 @@
 
 // Links
 
-@linkcolor 		    :  @grey;//rgb(1,53,104);
-@linkcolorhover 	: darken(@linkcolor, 10);
-@linkcolorvisited   : darken(@linkcolorhover, 10);
-@linkcolorfocus 	: darken(@linkcolorvisited, 10);
+@linkcolor 		    : @grey; //rgb(1,53,104);
+@linkcolorhover 	: @surprisecolor;  //darken(@linkcolor, 10);
+@linkcolorvisited  	: darken(@grey, 20);
+@linkcolorfocus 	: darken(@surprisecolor, 20);
 
 
 

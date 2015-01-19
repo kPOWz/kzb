@@ -2068,11 +2068,11 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
-  color: #666666;
+  color: #ff6a4d;
 }
 a:focus {
   outline: thin dotted;
-  color: #333333;
+  color: #e62500;
 }
 a:hover,
 a:active {
