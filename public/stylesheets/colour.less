@@ -33,6 +33,15 @@ color : @linkcolorfocus; }
 outline : 0; }
 }
 
+.actionable{
+	&:hover,
+	&:active{ 
+	color : @linkcolorhover; }
+
+	&:focus { 
+	color : @linkcolorfocus; }
+}
+
 ::-moz-selection { 
 background-color : lighten(@basecolor, 65%); 
 color : @basecolor; 
