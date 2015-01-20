@@ -133,13 +133,6 @@ body {
   line-height: 1.5em;
   color: #012c57;
 }
-.logo {
-  float: right;
-}
-.col_2 {
-  width: 50%;
-  display: inline-block;
-}
 /* Typography =================================================== */
 h1,
 h2,
@@ -3157,6 +3150,13 @@ table tbody tr:hover th {
 }
 @media only screen and (min-width: 600px) {
   /* 600 =================================================== */
+  .logo {
+    float: right;
+  }
+  .col_2 {
+    width: 60%;
+    display: inline-block;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
