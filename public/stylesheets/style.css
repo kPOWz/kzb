@@ -3109,8 +3109,14 @@ table tbody tr:hover th {
     border: 1px solid #808080;
     page-break-inside: avoid;
   }
+  /*
+* abbr[title]:after { 
+* content: " (" attr(title) ")"; }
+*/
+  abbr,
+  abbr[title],
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    border-bottom: none;
   }
   a,
   a:visited {

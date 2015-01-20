@@ -37,8 +37,15 @@ pre, blockquote {
 border : 1px solid @grey; 
 page-break-inside : avoid; }
 
-abbr[title]:after { 
-content: " (" attr(title) ")"; }
+/*
+* abbr[title]:after { 
+* content: " (" attr(title) ")"; }
+*/
+
+abbr,
+abbr[title],
+abbr[title]:after{
+	border-bottom: none;}
 
 // 3. COLOUR 				==============================
 
