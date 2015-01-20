@@ -3158,6 +3158,18 @@ table tbody tr:hover th {
 }
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
+  i.fa-envelope-o:after {
+    content: ' email me! ';
+  }
+  i.fa-phone:after {
+    content: ' telephoning me works too: ';
+  }
+  span.email:after {
+    content: ' (katherine? karrie?, yes, quite confusing.)';
+  }
+  span.phone:after {
+    content: ' (notice the prize ne iowa area code)';
+  }
 }
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
