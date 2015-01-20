@@ -133,13 +133,6 @@ body {
   line-height: 1.5em;
   color: #012c57;
 }
-.logo {
-  float: right;
-}
-.col_2 {
-  width: 50%;
-  display: inline-block;
-}
 /* Typography =================================================== */
 h1,
 h2,
@@ -180,7 +173,6 @@ h2,
   font-size: 2.4rem;
   line-height: 1.2;
 }
-header .cozy,
 hgroup .cozy {
   margin-bottom: 0;
 }
