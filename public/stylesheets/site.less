@@ -14,7 +14,7 @@
 html {
 margin : 0 2%;
 background : @bodycolor; 
-font-size : 62.5%;
+font-size : 100%;
 -webkit-overflow-scrolling : touch; 
 -webkit-tap-highlight-color : lighten(@basecolor, 75%); 
 -webkit-text-size-adjust : 100%; 
@@ -30,10 +30,13 @@ font-family : @basefont;
 line-height : @baselineheight;
 color : @textcolor; }
 
+
 // 2. TYPOGRAPHY 			==============================
 // 3. COLOUR 				==============================
 // 4. TEXTURE 				==============================
 // 5. ELEMENTS 				==============================
+body, div, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, menu, nav, section, time, mark, audio, video { 
+	.font-size(14); }
 // 6. LAYOUT 				==============================
 // 7. VENDOR-SPECIFIC 		==============================
 // 8. MODERNIZR 			==============================

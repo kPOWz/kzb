@@ -116,7 +116,7 @@ section {
 html {
   margin: 0 2%;
   background: #ffffff;
-  font-size: 62.5%;
+  font-size: 100%;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: #f3f5f6;
   -webkit-text-size-adjust: 100%;
@@ -129,9 +129,62 @@ body {
   background-color: transparent;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.5em;
   color: #012c57;
+}
+body,
+div,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+samp,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* Typography =================================================== */
 h1,
@@ -163,14 +216,14 @@ h1,
 .h1 {
   margin-bottom: 0.75em;
   font-size: 32px;
-  font-size: 3.2rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 h2,
 .h2 {
   margin-bottom: 0.75em;
   font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 header .cozy {
@@ -180,27 +233,27 @@ h3,
 .h3 {
   margin-bottom: 1em;
   font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 1.3125rem;
   line-height: 1.3;
 }
 h4,
 .h4 {
   margin-bottom: 1.5em;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   line-height: 1.25;
 }
 h5,
 .h5 {
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin-bottom: 1.5em;
 }
 h6,
 .h6 {
   margin-bottom: 1.5em;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -220,7 +273,7 @@ h6,
   float: right;
   padding: 4px 12px;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   background-color: #f3f5f6;
 }
 .header h1:hover,
@@ -246,7 +299,7 @@ dl,
 address {
   margin-bottom: 1.5em;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 1.5em;
 }
 p.details,
@@ -258,7 +311,7 @@ address.details {
 }
 small {
   font-size: 11px;
-  font-size: 1.1rem;
+  font-size: 0.6875rem;
 }
 ul,
 ol {
@@ -269,7 +322,7 @@ li ul,
 li ol {
   margin: 0;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 blockquote {
   margin: 0 0 1.5em -24px;
@@ -338,7 +391,7 @@ kbd,
 samp {
   font-family: Monaco, Courier New, monospace;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 1.5em;
 }
 pre {
@@ -350,7 +403,7 @@ sub,
 sup {
   position: relative;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   line-height: 0;
   vertical-align: baselineheight;
 }
@@ -2203,7 +2256,7 @@ a:active {
   border-radius: 2px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   color: #9c8611;
 }
 .alert .alert-heading {
@@ -2215,7 +2268,7 @@ a:active {
   right: -21px;
   float: right;
   font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 1.3125rem;
   font-weight: bold;
   line-height: 18px;
   color: inherit;
@@ -2259,7 +2312,7 @@ a:active {
 .badge {
   padding: 1px 9px 2px;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   font-weight: bold;
   white-space: nowrap;
   color: #808080;
@@ -2441,7 +2494,7 @@ figure figcaption {
   display: block;
   font-weight: normal;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   color: #808080;
 }
 .list-bordered {
@@ -2481,7 +2534,7 @@ form legend {
 }
 form legend small {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   color: #bfbfbf;
 }
 form p {
@@ -2501,7 +2554,7 @@ button,
 select,
 textarea {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   vertical-align: baseline;
   *vertical-align: middle;
 }
@@ -2609,7 +2662,7 @@ select {
   width: auto;
   background-color: #ffffff;
   font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
 }
 select[multiple],
 select[size] {
@@ -2672,11 +2725,11 @@ select:focus {
 }
 ::-webkit-input-placeholder {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 input:-moz-placeholder {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 .help-block,
 .help-inline {
@@ -2753,7 +2806,7 @@ input:-moz-placeholder {
   margin-bottom: 0;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   font-weight: bold;
   line-height: 1.5em;
   color: #404040;
@@ -2888,7 +2941,7 @@ input[type="submit"].btn:hover {
 .btn-extlarge {
   padding: 11px 22px;
   font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 1.3125rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2900,7 +2953,7 @@ input[type="submit"].btn:hover {
 .btn-large {
   padding: 11px 22px;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: normal;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2909,13 +2962,13 @@ input[type="submit"].btn:hover {
 .btn-small {
   padding: 6px 10px;
   font-size: 11px;
-  font-size: 1.1rem;
+  font-size: 0.6875rem;
   line-height: 16px;
 }
 .btn-mini {
   padding: 3px 5px;
   font-size: 11px;
-  font-size: 1.1rem;
+  font-size: 0.6875rem;
   line-height: 14px;
 }
 .btn-group {
@@ -3027,7 +3080,7 @@ table td {
   vertical-align: top;
   border-top: 1px solid #8c9bab;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 1.5em;
   text-align: left;
 }
@@ -3080,6 +3133,9 @@ table tbody tr:hover th {
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #c7ced6;
+}
+table .col-skill {
+  width: 70%;
 }
 @media print {
   /* Print =================================================== */
@@ -3178,6 +3234,9 @@ table tbody tr:hover th {
   /* 1382 =================================================== */
   body {
     max-width: 1440px;
+  }
+  html {
+    font-size: 120%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
