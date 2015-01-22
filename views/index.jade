@@ -306,17 +306,71 @@ html(class="no-js", lang="en")
           li(role='listitem') Major: Management Information Systems,   Minor: Marketing
           li(role='listitem') Graduation Date: Dec. 2007
       footer
-        &copy;2015 Fluff Enterprices LLC.
-        script.
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        div.first       
+          h6.cozy web standards compliant
+          ul.none
+            li
+              i.fa.fa-check-square-o  Valid HTML5 document &nbsp; 
+              a(rel='external' target='_blank' href='http://validator.w3.org/check?uri=http%3A%2F%2Fkzb.herokuapp.com%2F&charset=%28detect+automatically%29&doctype=Inline&group=0') 
+                | via W3C 
+                i.fa.fa-external-link 
+            li
+              i.fa.fa-check-square-o  Structured document &nbsp; 
+              a(rel='external' target='_blank' href='https://developers.google.com/webmasters/structured-data/testing-tool?url=http%253A%252F%252Fkzb.herokuapp.com%252F') 
+                | via Google &amp; Schema.org 
+                i.fa.fa-external-link 
+            li
+              i.fa.fa-check-square-o  Accessible document &nbsp; 
+              a(rel='external' target='_blank' href='http://wave.webaim.org/report#/http%3A%2F%2Fkzb.herokuapp.com%2F')
+                | via WebAIM 
+                i.fa.fa-external-link 
+        div
+          h6.cozy powered by
+          ul.none
+            li Heorku 
+              a(href='https://www.heroku.com/' rel='external' target='_blank')
+                i.fa.fa-external-link 
+            li LESS 
+              a(href='http://lesscss.org/' rel='external' target='_blank')
+                i.fa.fa-external-link 
+            li Express 
+              a(href='http://expressjs.com/' rel='external' target='_blank') 
+                i.fa.fa-external-link 
+              |  on Node.js 
+              a(href='http://expressjs.com/' rel='external' target='_blank') 
+                i.fa.fa-external-link 
+            li Font Awesome 
+              a(href='https://fortawesome.github.io' rel='external' target='_blank')
+                i.fa.fa-external-link 
+            li git 
+              a(href='http://www.git-scm.com/' rel='external' target='_blank')
+                i.fa.fa-external-link
+            li Jade 
+              a(href='http://jade-lang.com/' rel='external' target='_blank')
+                i.fa.fa-external-link 
+        div
+          h6.cozy musings
+          ul.none
+            li Github 
+              a(href='https://github.com/kPOWz' rel='external' target='_blank')
+                i.fa.fa-github-square
+            li Blog  
+              a(href='http://bohemia.technica.io/' rel='external' target='_blank')
+                i.fa.fa-bookmark
+            li LinkedIn  
+              a(href='https://www.linkedin.com/pub/katherine-zeman/5/348/980' rel='external' target='_blank')
+                i.fa.fa-linkedin-square
+        small.copyright &copy;2015 Fluff Enterprices LLC.
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-36362400-1', 'kzb.herokuapp.com');
-          ga('send', 'pageview');
-          window.addEventListener('hashchange', function(event) {
-              history.pushState(null, null, ' ');});
+        ga('create', 'UA-36362400-1', 'kzb.herokuapp.com');
+        ga('send', 'pageview');
+        window.addEventListener('hashchange', function(event) {
+            history.pushState(null, null, ' ');});
 
 
     

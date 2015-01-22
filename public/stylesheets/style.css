@@ -125,7 +125,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 2em auto 6em;
+  margin: 2em auto 30em;
   padding: 0;
   width: 100%;
   background-color: transparent;
@@ -228,6 +228,7 @@ h2,
   font-size: 1.5rem;
   line-height: 1.2;
 }
+footer .cozy,
 header .cozy {
   margin-bottom: 0;
 }
@@ -2517,6 +2518,10 @@ figure figcaption {
   padding-bottom: 0;
   border-bottom-width: 0;
 }
+ul.none {
+  list-style-type: none;
+  padding: 0;
+}
 footer {
   background-color: #f2f2f2;
   color: #808080;
@@ -2524,8 +2529,14 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 6em;
+  height: 30em;
   width: 100%;
+}
+footer h6 {
+  padding-top: 0;
+}
+footer div.first {
+  padding-top: 2rem;
 }
 /* Forms =================================================== */
 form {
@@ -3237,6 +3248,19 @@ table .col-skill {
 }
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer h6 {
+    padding-top: 2rem;
+  }
+  footer div.first {
+    padding-top: 0;
+  }
+  footer .copyright {
+    align-self: flex-end;
+  }
   i.fa-envelope-o:after {
     content: ' email me! ';
   }
