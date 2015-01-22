@@ -314,5 +314,8 @@ html(class="no-js", lang="en")
 
           ga('create', 'UA-36362400-1', 'kzb.herokuapp.com');
           ga('send', 'pageview');
+          window.addEventListener('hashchange', function(event) {
+              history.pushState(null, null, ' ');});
+
 
     
