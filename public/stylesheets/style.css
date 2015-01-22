@@ -114,6 +114,8 @@ section {
 }
 /* Page =================================================== */
 html {
+  position: relative;
+  min-height: 100%;
   margin: 0 2%;
   background: #ffffff;
   font-size: 100%;
@@ -123,7 +125,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 2em auto 3em;
+  margin: 2em auto 6em;
   padding: 0;
   width: 100%;
   background-color: transparent;
@@ -2514,6 +2516,16 @@ figure figcaption {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom-width: 0;
+}
+footer {
+  background-color: #f2f2f2;
+  color: #808080;
+  border-top: groove;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6em;
+  width: 100%;
 }
 /* Forms =================================================== */
 form {
