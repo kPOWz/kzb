@@ -21,23 +21,40 @@ footer{ height: 32em;}
 footer{
 	h6,details{	padding-top: 2rem;}
     div.first{ padding-top: 0;}
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
     justify-content: space-around;
     .copyright{ 
-		display: -moz-box;
+	    display: -webkit-box;
+	    display: -moz-box;
 	    display: -ms-flexbox;
-		display: flex;
+	    display: -webkit-flex;
+	    display: flex;
 		flex: 1;
+		-webkit-box-align: end;
+	    -moz-box-align: end;
+	    -webkit-align-items: flex-end;
+	    -ms-flex-align: end;
 		align-items: flex-end;}}
 .flex-vertical{
- 	display: -moz-box;
+ 	display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -moz-box-direction: column;
-    -webkit-box-direction: column;
-    -ms-flexbox-direction: column;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
 // 7. VENDOR-SPECIFIC 		==============================
 // 8. MODERNIZR 			==============================
