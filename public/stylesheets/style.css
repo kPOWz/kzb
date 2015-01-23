@@ -3257,14 +3257,14 @@ table .col-skill {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  i.fa-envelope-o:after {
+  span.email:before {
     content: ' email me! ';
-  }
-  i.fa-phone:after {
-    content: ' telephoning me works too: ';
   }
   span.email:after {
     content: ' (katherine? karrie?, yes, quite confusing.)';
+  }
+  span.phone:before {
+    content: ' telephoning me works too: ';
   }
   span.phone:after {
     content: ' (notice the prize ne iowa area code)';
