@@ -135,56 +135,7 @@ body {
   line-height: 1.5em;
   color: #012c57;
 }
-body,
-div,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-ins,
-kbd,
-q,
-samp,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-footer,
-menu,
-nav,
-section,
-time,
-mark,
-audio,
-video {
+body {
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -301,8 +252,6 @@ ul,
 dl,
 address {
   margin-bottom: 1.5em;
-  font-size: 14px;
-  font-size: 0.875rem;
   line-height: 1.5em;
 }
 p.details,
@@ -312,7 +261,8 @@ dl.details,
 address.details {
   display: none;
 }
-small {
+small,
+.small {
   font-size: 11px;
   font-size: 0.6875rem;
 }
@@ -2529,7 +2479,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 30em;
+  height: 32em;
   width: 100%;
 }
 footer h6 {
