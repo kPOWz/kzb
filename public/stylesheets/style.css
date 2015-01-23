@@ -91,8 +91,7 @@ section {
   display: block;
 }
 *:focus {
-  outline: thin dotted;
-  color: #ff6a4d;
+  outline: #ff6a4d thin dotted;
 }
 /* Variables =================================================== */
 /* Mixins =================================================== */
@@ -2084,8 +2083,7 @@ a:hover {
   color: #ff6a4d;
 }
 a:focus {
-  outline: thin dotted;
-  color: #ff6a4d;
+  outline: #ff6a4d thin dotted;
 }
 a:hover,
 a:active {
@@ -2489,10 +2487,6 @@ footer details {
 }
 footer div.first {
   padding-top: 2rem;
-}
-details:target {
-  outline: thin dotted;
-  color: #ff6a4d;
 }
 /* Forms =================================================== */
 form {
