@@ -179,8 +179,9 @@ html(class="no-js", lang="en")
           thead
             tr
               th.col-skill Skill
-              th Level               
-                i(title='hover over stars to help interpret level').fa.fa-info-circle.help.actionable
+              th Level 
+                a(href='#stars')
+                  i.fa.fa-info-circle
             tr
               td C#
               td 
@@ -357,7 +358,47 @@ html(class="no-js", lang="en")
             li LinkedIn  
               a(href='https://www.linkedin.com/pub/katherine-zeman/5/348/980' rel='external' target='_blank')
                 i.fa.fa-linkedin-square
-        small.copyright &copy;2015 Fluff Enterprices LLC.
+        div
+        div.flex-vertical
+          details
+            summary(id='stars') Star scale breakdown
+            dl
+              dt
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+              dd expert
+              dt
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star-o
+              dd intermediate to expert
+              dt
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+              dd intermediate
+              dt
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+              dd beginner to intermediate
+              dt
+                i.fa.fa-star
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+              dd beginner
+          small.copyright &copy;2015 Fluff Enterprices LLC.
       script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

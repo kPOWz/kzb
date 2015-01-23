@@ -14,14 +14,31 @@
 // 3. COLOUR 				==============================
 // 4. TEXTURE 				==============================
 // 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+body { 
+margin : 2em auto 32em;}
+footer{ height: 32em;}
 footer{
-	h6{	padding-top: 2rem;}
+	h6,details{	padding-top: 2rem;}
     div.first{ padding-top: 0;}
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
-    .copyright{ align-self: flex-end;}
-}
-// 6. LAYOUT 				==============================
+    .copyright{ 
+		display: -moz-box;
+	    display: -ms-flexbox;
+		display: flex;
+		flex: 1;
+		align-items: flex-end;}}
+.flex-vertical{
+ 	display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-direction: column;
+    -webkit-box-direction: column;
+    -ms-flexbox-direction: column;
+    flex-direction: column; }
 // 7. VENDOR-SPECIFIC 		==============================
 // 8. MODERNIZR 			==============================
 // 9. TEMPLATE SPECIFICS 	==============================

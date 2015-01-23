@@ -90,6 +90,9 @@ nav,
 section {
   display: block;
 }
+*:focus {
+  outline: #ff6a4d auto 2px;
+}
 /* Variables =================================================== */
 /* Mixins =================================================== */
 .clearfix {
@@ -125,7 +128,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 2em auto 30em;
+  margin: 2em auto 56em;
   padding: 0;
   width: 100%;
   background-color: transparent;
@@ -331,9 +334,6 @@ ins {
   background-color: #f3f5f6;
   color: #012c57;
   text-decoration: none;
-}
-i.help {
-  cursor: help;
 }
 mark {
   background-color: #f3f5f6;
@@ -2479,14 +2479,18 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 32em;
+  height: 56em;
   width: 100%;
 }
-footer h6 {
+footer h6,
+footer details {
   padding-top: 0;
 }
 footer div.first {
   padding-top: 2rem;
+}
+details:target {
+  outline: #ff6a4d auto 2px;
 }
 /* Forms =================================================== */
 form {
@@ -3198,18 +3202,40 @@ table .col-skill {
 }
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
+  body {
+    margin: 2em auto 32em;
+  }
   footer {
+    height: 32em;
+  }
+  footer {
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
   }
-  footer h6 {
+  footer h6,
+  footer details {
     padding-top: 2rem;
   }
   footer div.first {
     padding-top: 0;
   }
   footer .copyright {
-    align-self: flex-end;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+  }
+  .flex-vertical {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-direction: column;
+    -webkit-box-direction: column;
+    -ms-flexbox-direction: column;
+    flex-direction: column;
   }
   i.fa-envelope-o:after {
     content: ' email me! ';
