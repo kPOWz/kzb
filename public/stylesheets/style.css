@@ -91,7 +91,8 @@ section {
   display: block;
 }
 *:focus {
-  outline: #ff6a4d auto 2px;
+  outline: thin dotted;
+  color: #ff6a4d;
 }
 /* Variables =================================================== */
 /* Mixins =================================================== */
@@ -2084,7 +2085,7 @@ a:hover {
 }
 a:focus {
   outline: thin dotted;
-  color: #e62500;
+  color: #ff6a4d;
 }
 a:hover,
 a:active {
@@ -2095,7 +2096,7 @@ a:active {
   color: #ff6a4d;
 }
 .actionable:focus {
-  color: #e62500;
+  color: #ff6a4d;
 }
 ::-moz-selection {
   background-color: #d6dbe1;
@@ -2490,7 +2491,8 @@ footer div.first {
   padding-top: 2rem;
 }
 details:target {
-  outline: #ff6a4d auto 2px;
+  outline: thin dotted;
+  color: #ff6a4d;
 }
 /* Forms =================================================== */
 form {
