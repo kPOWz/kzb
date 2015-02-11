@@ -128,7 +128,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 2em auto 56em;
+  margin: 2em auto 60em;
   padding: 0;
   width: 100%;
   background-color: transparent;
@@ -2478,7 +2478,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 56em;
+  height: 60em;
   width: 100%;
 }
 footer h6,
