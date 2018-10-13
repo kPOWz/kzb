@@ -7,5 +7,17 @@
 
 // ==========================================================
 
+#stars:target{
+    animation: flash-highlight 5s;
+}
 
-
+@keyframes flash-highlight {
+    /* You could think of as "step 1" */
+    0% {
+      background: #ff6a4d;
+    }
+    /* You could think of as "step 2" */
+    100% {
+      background: #f2f2f2;
+    }
+  }
